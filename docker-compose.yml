@@ -28,7 +28,9 @@ services:
       - banco-network
 
   banco-service:
-    build: ./banco-service
+    build:
+      context: .
+      dockerfile: banco-service/Dockerfile
     container_name: banco-service
     ports:
       - "8080:8080"

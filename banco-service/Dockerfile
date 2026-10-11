@@ -2,7 +2,8 @@ FROM eclipse-temurin:17-jre
 
 WORKDIR /app
 
-COPY target/*.jar app.jar
+COPY banco-service/target/*.jar app.jar
+COPY fin_legacy_data /fin_legacy_data
 
 EXPOSE 8080
 
