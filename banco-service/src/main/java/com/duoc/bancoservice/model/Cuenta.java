@@ -1,3 +1,4 @@
+
 package com.duoc.bancoservice.model;
 
 import jakarta.persistence.Entity;
